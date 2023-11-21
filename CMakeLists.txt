@@ -6,5 +6,7 @@ find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp classes.cpp namespaces.cpp functions.cpp variable.cpp)
+set(SOURCE_FILES main.cpp classes.cpp namespaces.cpp functions.cpp variable.cpp
+        enum.cpp
+)
 add_executable(untitled16 ${SOURCE_FILES})
